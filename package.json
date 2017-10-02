@@ -1,0 +1,8 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "main": "alvareando",
+  "repository": "git@github.com:alvareando/my-website.git",
+  "author": "Alvaro Lobato <alobato678@gmail.com>",
+  "license": "MIT"
+}
