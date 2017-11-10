@@ -1,0 +1,477 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(cubes.png);
+
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  font-size: 14px;
+  }
+
+
+  /* BANNER CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.banner {
+  color: #C1BDB3;
+  text-align: center;
+  height: calc(100vh - 70px);
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.banner--content h1 {
+  color: #2c2b2b;
+  min-height: 60px;
+  font-size:  50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.banner--content p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgba(255,144,104, 1);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+  /* MY STORY
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+  /* left-part
+}
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  padding: 0px 0;
+}
+
+.intro h1{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+  width: 200px;
+  margin: 0 auto;
+  color: #2c2b2b;
+}
+
+  #sticky h1{
+margin: 0 auto;
+color: #2c2b2b;
+width: auto;
+}
+
+
+
+/* right-part
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+// Line
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgba(255,144,104, 0.3);
+  border-radius: 5px;
+}
+
+// Lime After effect
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px;
+  border-color: #C1BDB3;
+  background: inherit;
+}
+
+// Text boxes
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #C1BDB3;
+  color: white;
+  height: -7px;
+  border-radius: 5px;
+}
+
+// Pointer in teztbox
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0, 0.3);
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #C1BDB3 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0, 0.3);
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #C1BDB3;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* TIMELINE EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: rgba(255,144,104, 1)
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SKILL BARS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.row--right{
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.card--area{
+  margin: 35px;
+  color: white;
+  width: 100%;
+}
+
+.card--text-area{
+  border-width: 1px;
+  background-color: #C1BDB3;
+  height: auto;
+  width: auto;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  ul{
+    list-style-type: circle;
+    list-style-color: rgba(255,144,104, 1);
+  }
+}
+
+
+
+.card--skill{
+  width: 20%;
+  padding-left: 5px;
+  position: relative;
+
+  #rubyOnRailsCircle{
+    white-space: nowrap;
+    vertical-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p{
+    position: absolute;
+    font-size: smaller;
+    color: black;
+    box-shadow: inset 0px -15px rgba(255,144,104, 1);
+  }
+}
+
+
+.card--text-area-content{
+  vertical-align: center;
+  padding-left: 5%;
+}
+.card--img-area{
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.card--img-area .overlay {
+  padding: auto;
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.card--img-area:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.card--img-area img {
+  width: 100;
+  height: 100%;
+  object-fit: fill;
+  //display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.card--img-area:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.card--img-area h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.card--img-area a, .card--img-area p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.card--img-area:hover a, .card--img-area:hover p, .card--img-area:hover h2 {
+  text-decoration: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#rubyOnRailsCircle {
+  width: 100px;
+  height: 100px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  position: relative;
+}
+#rubyOnRailsCircle > svg {
+  width: 100%;
+  display: block
+
+}
+.htmlCSS {
+  width: 100%;
+}
+#htmlCircle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#htmlCircle > svg {
+    width: 100%;
+    display: block;
+}
+
+/* My Projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.carousel-area{
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0, 0.3);
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px;
+    width: 600px;
+    height: 400px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto;
+ /* Align slide image horizontally center */
+}
+.text-area{
+  color: white;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 900px) {
+  #sticky {
+    flex: 0 0 450px;
+    height: 100vh;
+    position: sticky !important; /* !important to override Gmaps inline CSS */
+    top: 0 !important;
+  }
+  .flex{
+    display: flex;
+  }
+
+
+}
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+  .banner--content h1 {
+    color: #2c2b2b;
+    min-height: 40px;
+    font-size:  40px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner--content h1 {
+    color: #2c2b2b;
+    min-height: 20px;
+    font-size:  20px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgba(255,144,104, 1) transparent transparent;
+  }
+}
