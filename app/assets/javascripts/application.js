@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require progressbar
+//= require particles
 //= require typed
 //= require figures
 //= require homepage
