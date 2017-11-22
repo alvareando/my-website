@@ -46,11 +46,11 @@
 
           <hr>
 
-          I enjoy solving problems, troubleshooting issues, and coming up with solutions in a timely manner. I thrive in team settings, and I think my ability to effectively communicate with others is what drives my ability to solve a variety of problems.
+          I recently graduated from one of the top Business Schools in UK and have a passion for coding. In fact, I just completed Le Wagon's full-stack program where I learnt to build amazing things. I proposed and led the final project which we then presented on Google Campus (see link in my bio). I am now looking for a job at a company where I can develop and grow.
 
           <hr>
 
-          I am competitive Tennis and Football player. Also, I am an avid reader and an enthusiastic traveller.</p>
+          I am competitive Tennis and Football player, an avid reader and an enthusiastic traveller.</p>
       </div>
     </div>
     <div class="timeline row--right col-xs-12 col-sm-9 col-md-9">
@@ -104,13 +104,12 @@
 <div class="container-fluid">
   <div class="flex" id= "skills">
     <div id= "sticky" class="row--left col-xs-12 col-sm-3 col-md-3">
-      <h1>My Skills</h1>
-      <p>English language — most important skill for every developer. You will use it on a daily basis. Surprisingly a developer’s work is mainly not about writing, but reading. Most probably you will also use it in a communication with other team members/clients etc.
-      Ambition — you don’t want to be a junior for years, right? Try to participate in solving harder problems, non only trivial ones.
-      “I don’t know” approach — only if you admit, that you don’t know something, you can learn it. Usually more senior colleagues will be happy to help you with something if you say that you don’t know it. You don’t have to be shy because of that. It’s a normal process of learning.
-      Willingness and desire to learn — try to show that desire to learn. Ask, spend additional time reading and coding your pet projects.
-      Culture/company fit — this is huge and very important. If you feel you don’t belong to the company, or the company knows you don’t feel that spirit, it makes no sense to go that way for both of them. Your performance will go up only if you feel good in that environemnt.
-      Knowledge where to look for an answer in Internet — as I wrote before — a developer is mainly reading, not writing. As a junior programmer you have to know where to find answers to your questions. Get familiar with Stackoverflow, forums, Google, …</p>
+      <h1 class= "title">My Skills</h1>
+      <p class= "text">If you only have to remember one thing about me that thing should be that I am extremely customer oriented.</p>
+      <hr>
+      <p>I am also a true team player who loves solving problems and is good at making decisions.</p>
+      <hr>
+      <p>I am a coder and a business person. This interdisciplinary background allows me to look at problems from different perspectives</p>
     </div>
     <div class="row--right col-xs-12 col-sm-9 col-md-9">
       <div class="card--area flex">
@@ -240,8 +239,12 @@
   <div class="flex" id="portfolio">
 
     <div id= "sticky" class="row--left col-xs-12 col-sm-3 col-md-3">
-      <h1>My Projects</h1>
-      <p>I am a very goood man. Love life beacuse is too short to hate it</p>
+      <h1 class= "title">My Projects</h1>
+      <p class= "text">Although I am young, I like to keep busy and get my hands around pretty much everything that is a challenge.</p>
+      <hr>
+      <p>In most of my projects I have extensively used <a href="http://www.adobe.com/uk/creativecloud.html">Creative Cloud</a> (this includes: Photoshop, Illustrator, Premiere Pro, AdobeXD) and <a href="https://www.sketchapp.com/">Sketch</a>. I can't show all my work on this website so feel free to ask me for some examples of my work!</p>
+      <hr>
+      <p>I am familiar with tools such as <a href="https://slack.com/">Slack</a>, <a href="https://trello.com/">Trello</a>, and other team management tools.</p>
     </div>
     <div class="row--right col-xs-12 col-sm-9 col-md-9">
       <div class="project--area">
@@ -280,8 +283,8 @@
         </div>
         <div class="description-area">
           <div class="text-area">
-            <h3>educrew.app</h3>
-            <p>I worked on educrew sinde I was born.</p>
+            <h3><a href="http://educrewapp.com/">educrewapp.com</a></h3>
+            <p>I identified a growing need for specialised tutoring at University. This idea bases on the principle that students who succeded in one specific module can help other students who are struggeling in that same module. Within 2 months I had formed a team of three, developed and launched the beta of an <a href="https://play.google.com/store/apps/details?id=com.educrew.tutor.droid&hl=en">Android  Application</a> and implemented the correct marketing strategy. We recruited the best students from different modules and peaked when we provided more than 60 hours of lessons during the two weeks of Beta at Cass Business School.</p>
           </div>
           <div class="technologies">
             <p>Built with:</p>
@@ -336,17 +339,21 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-01-1.png" alt="First Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-22_at_12.08.59_swu3qv", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-03-1.png" alt="Second Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-22_at_12.09.33_eyqs7k", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/01/Recurso-1.png" alt="Third Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-22_at_12.09.57_rf7lxa", :height=>1151, :width=>2048, :crop=>"scale") %>
+              </div>
+              <div class="item">
+                <%= cl_image_tag("20988949_268818410276491_8764990126267841642_o_njxmqz", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
             </div>
             <!-- Carousel controls -->
@@ -360,67 +367,8 @@
         </div>
         <div class="description-area">
           <div class="text-area">
-            <h3>educrew.app</h3>
-            <p>I worked on educrew sinde I was born.</p>
-          </div>
-          <div class="technologies">
-            <p>Built with:</p>
-            <div class="flex icons">
-              <a href="">
-                <img src="https://d301sr5gafysq2.cloudfront.net/e17447e6d7b5/img/repo-avatars/ruby.svg" alt="">
-              </a>
-              <a href="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png" alt="">
-              </a>
-            </div>
-            <div class="flex icons">
-              <a href="">
-                <img src="https://thenewboston.com/images/forum/logos/145efe2aab7ca9959397d6344180b658.png" alt="">
-              </a>
-              <a href="">
-                <img src="http://www.newthinktank.com/wp-content/uploads/2015/04/CSS3-Tutorial.png" alt="">
-              </a>
-            </div>
-            <div class="flex icons">
-              <a href="">
-                <img src="https://ucarecdn.com/cc6abaa3-acab-4ce7-a0fd-a0ef563ef08c/" alt="">
-              </a>
-              <a href="">
-                <img src="https://res.cloudinary.com/demo/image/upload/e_shadow,x_13,y_13/cloudinary_icon.png" alt="">
-              </a>
-            </div>
-            <div class="flex icons">
-              <a href="">
-                <img src="https://cdn.worldvectorlogo.com/logos/twilio.svg" alt="">
-              </a>
-              <a href="">
-                <img src="http://www.mericar.com/chat_logo.png" alt="">
-              </a>
-            </div>
-            <div class="flex icons">
-              <a href="">
-                <img src="https://morpht.com/sites/morpht/files/bootstrap_solid.png" alt="">
-              </a>
-              <a href="">
-                <img src="https://res.cloudinary.com/demo/image/upload/e_shadow,x_13,y_13/cloudinary_icon.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project--area">
-        <div class="carousel-area">
-          <div id="my-carousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XGSy3_Czz8k">
-            </iframe>
-            </a>
-          </div>
-        </div>
-        <div class="description-area">
-          <div class="text-area">
-            <h3>educrew.app</h3>
-            <p>I worked on educrew sinde I was born.</p>
+            <h3><a href="https://artixvy-meredaul.herokuapp.com/">Artixvy</a></h3>
+            <p>During the Le Wagon Programme, my team and I developed an Airbnb for paintings. Users could post a painting and buy users' paintings. The paintings had a price, a location, a title and a description.</p>
           </div>
           <div class="technologies">
             <p>Built with:</p>
@@ -475,17 +423,25 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-01-1.png" alt="First Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-17_at_14.46.49_wrqyv7.png", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-03-1.png" alt="Second Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-17_at_14.23.31_btbahd.png", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/01/Recurso-1.png" alt="Third Slide">
+                <%= cl_image_tag("Screen_Shot_2017-11-17_at_14.24.09_y1q0ca.png", :height=>1151, :width=>2048, :crop=>"scale") %>
+              </div>
+              <div class="item">
+                <%= cl_image_tag("EDUCREW_fhgasj.jpg", :height=>1151, :width=>2048, :crop=>"scale") %>
+              </div>
+              <div class="item">
+                <%= cl_image_tag("21587091_277681279390204_1789647503473263890_o_cfam5l", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
             </div>
             <!-- Carousel controls -->
@@ -499,8 +455,10 @@
         </div>
         <div class="description-area">
           <div class="text-area">
-            <h3>educrew.app</h3>
-            <p>I worked on educrew sinde I was born.</p>
+            <h3><a href="https://www.educrew.io/">educrew.io</a></h3>
+            <p>After providing more than 60 hours of tutoring, I understood how to address students' needs more acccurately. This time I needed something different, a new perspective. After the 2 weeks of programming we managed to create a video-streaming tutoring platform. You can see me present the 'new' EduCrew at Google Campus <a href="https://www.lewagon.com/demoday/93/educrew">here</a>. I seem a bit nervous, but not even that much. It was a great challenge and people loved the product!
+
+            More progress is being made in this aspect so don't hesitate to ask me about it. I'm always looking for new talent!</p>
           </div>
           <div class="technologies">
             <p>Built with:</p>
@@ -555,17 +513,21 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-01-1.png" alt="First Slide">
+                <%= cl_image_tag("19225110_457104144666981_4093928429075023369_n_wjikqs", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/04/Sin-ti%CC%81tulo-4-03-1.png" alt="Second Slide">
+                <%= cl_image_tag("17239667_404310009946395_8341146127270390675_o_fzbiam", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
               <div class="item">
-                <img src="http://educrewapp.com/wp-content/uploads/2017/01/Recurso-1.png" alt="Third Slide">
+                <%= cl_image_tag("13653374_267366023640795_220969623827173390_o_xjljjm", :height=>1151, :width=>2048, :crop=>"scale") %>
+              </div>
+              <div class="item">
+                <%= cl_image_tag("14907197_331091590601571_69215863704022531_n_xki9pt", :height=>1151, :width=>2048, :crop=>"scale") %>
               </div>
             </div>
             <!-- Carousel controls -->
@@ -579,8 +541,12 @@
         </div>
         <div class="description-area">
           <div class="text-area">
-            <h3>educrew.app</h3>
-            <p>I worked on educrew sinde I was born.</p>
+            <h3><a href="https://artixvy-meredaul.herokuapp.com/">Club 31</a></h3>
+            <p>As soon as I finished Le Wagon’s programme, I was offered to work remotely as a business developer for Club 31, one of Madrid´s culinary landmarks since 1959. My objective at Club 31 is to provide a new stream of younger customers and increment the restaurant’s presence in the business sector.
+
+            In September, I started executing a successful online marketing campaign through Google AdWords to persuade the younger public. Today more than 30% of non-business bookings are made through the restaurant´s website or Facebook page.
+
+            In terms of the restaurant´s business presence, I helped prepared successful meetings with the AMEX department of Barcelona, El Corte Ingles S.L, The Congress of deputies and the Spanish National Bank. These are all now frequent clients of Club 31.</p>
           </div>
           <div class="technologies">
             <p>Built with:</p>
