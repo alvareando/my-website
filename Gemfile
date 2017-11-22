@@ -41,7 +41,7 @@ gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
 gem 'typedjq-rails'
-gem 'figaro'
+gem 'figaro', '~> 1.0.0'
 gem 'cloudinary'
 
 group :development, :test do
