@@ -29,9 +29,10 @@
     </div>
   </div>
 </navbar>
+
   <div class="banner--content ">
     <h1 id= typed></h1>
-    <p>Business Graduate and Fullstack Developer</p>
+    <h5>Business Graduate and Fullstack Developer</h5>
   </div>
 </div>
 
@@ -597,7 +598,19 @@
   </div>
 </div>
 
+<% content_for(:after_js) do %>
+   <script>
+      var options = {
+      strings: ["Hi, I am Álvaro", "I am an Ambitious Programmer", "I am an Ingenious Marketer", "I am a Start-up Builder", "Welcome to my world"],
+      loop: false,
+      typeSpeed: 40,
+      shuffle: false,
+      autoInsertCss: true,
+    }
 
+    var typed = new Typed("#typed", options);
+   </script>
+<% end %>
 
 
 
