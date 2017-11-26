@@ -33,9 +33,6 @@ body {
     line-height: 1.15;
     letter-spacing: -.015em;
   }
-  p{
-    text-align: justify;
-  }
   a{
     color: $orange;
   }
@@ -458,7 +455,7 @@ time {
 .text-area{
   background-color: $blue;
   padding: 0 7.5px;
-  width: 80%;
+  width: 100%;
   h3{
     margin-top: 15px;
     margin-bottom: 7.5px;
@@ -506,7 +503,7 @@ time {
 @media screen and (min-width: 900px) {
   #sticky {
     flex: 0 0 450px;
-    height: 70vh;
+    height: 100vh;
     position: sticky !important; /* !important to override Gmaps inline CSS */
     top: 0 !important;
   }
@@ -578,9 +575,9 @@ time {
   width: 30px;
   height: 30px;
   margin: 7.5px;
-  opacity: .5;
+  opacity: 1;
   &:hover {
-    opacity: 1;
+    opacity: .5;
   }
 }
 
