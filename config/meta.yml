@@ -1,0 +1,5 @@
+meta_product_name: "Alvaro Lobato | Web Developer"
+meta_title: "Alvaro Lobato - Business Consultant and Web Developer"
+meta_description: "Trustworthy Business Consultant and ambitious Web Developer"
+meta_image: "cover.png"                       # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
